@@ -26,3 +26,22 @@ while(other_counter < all_classes.length){
     all_other_classes[other_counter][`innerText`] = `These were all other classes`;
     other_counter++;
 }
+
+let link_id = document.getElementById(`link`);
+link_id[`innerHTML`] = link_id[`innerHTML`] + `<p>Satinder</p>`;
+link_id[`innerHTML`] = `Click here for <a href = "https://"Github.com>Github</a>`;
+link_id[`innerHTML`] = `<p> do you want to see my recent projects?</p>` +  link_id[`innerHTML`]; 
+link_id[`innerHTML`] = link_id[`innerHTML`] + `,And it is hacked as well!!!!!`;
+link_id[`outerHTML`] = `<a href = "https://github.com">here is github </a>` + link_id[`innerHTML`];
+
+let shared = document.querySelectorAll(`.shared_class`);
+let shared_counter = 0;
+for(shared_counter = 0; shared_counter < shared.length; shared_counter++ ){
+    shared[shared_counter][`innerHTML`] += `hacked`;
+}
+
+let color = document.getElementById(`colored`);
+color[`style`][`backgroundColor`] = `red`;
+color[`style`][`color`] = `yellow`;
+color[`style`][`fontWeight`] = `bold`;
+color[`style`][`fontSize`] = `50px`;
